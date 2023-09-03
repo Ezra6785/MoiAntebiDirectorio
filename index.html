@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>University List</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <style>
@@ -8,11 +9,11 @@
       font-family: 'Montserrat', Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f0f2f5;
+      background-color: #f5f5f5;
       color: #333;
     }
     header {
-      background: linear-gradient(to right, #007BFF, #00B4DB);
+      background-color: #007BFF;
       color: #fff;
       text-align: center;
       padding: 20px 0;
@@ -30,27 +31,24 @@
     li {
       margin-bottom: 30px;
       margin-left: 20px;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
       padding: 20px;
       transition: transform 0.2s, box-shadow 0.2s;
-      display: flex;
-      align-items: center;
     }
     li:hover {
       transform: translateY(-5px);
-      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     }
     .university {
-      flex: 1;
+      display: block;
       font-size: 24px;
       font-weight: bold;
       color: #007BFF;
       margin-bottom: 10px;
     }
     .info {
-      flex: 3;
       font-size: 16px;
       line-height: 1.5;
     }
@@ -62,7 +60,7 @@
       text-decoration: underline;
     }
     footer {
-      background: linear-gradient(to right, #007BFF, #00B4DB);
+      background-color: #333;
       color: #fff;
       text-align: center;
       padding: 10px 0;
@@ -73,12 +71,6 @@
     .creator {
       font-size: 14px;
     }
-    .image {
-      max-width: 100px;
-      height: auto;
-      margin-right: 20px;
-      border-radius: 8px;
-    }
   </style>
 </head>
 <body>
@@ -87,31 +79,158 @@
   </header>
   <ul>
     <li>
-      <img class="image" src="https://picsum.photos/100/100" alt="University 1">
-      <div class="info">
-        <span class="university"><a href="https://www.example-university1.com">Example University 1</a></span>
-        <p>Located in the heart of a bustling city, Example University 1 offers a wide range of academic programs and a vibrant campus life.</p>
-      </div>
+      <span class="university"><a href="#">UNIVERSIDAD TECNOLÓGICA DE PANAMÁ</a></span>
+      <p class="info">La Universidad Tecnológica de Panamá (UTP) es la institución estatal de mayor jerarquía en lo que a educación superior científica-tecnológica se refiere, en la República de Panamá.</p>
     </li>
     <li>
-      <img class="image" src="https://picsum.photos/100/100" alt="University 2">
-      <div class="info">
-        <span class="university"><a href="https://www.example-university2.com">Example University 2</a></span>
-        <p>With a strong emphasis on research and innovation, Example University 2 is a hub for cutting-edge technology and groundbreaking discoveries.</p>
-      </div>
+      <span class="university"><a href="#">UNIVERSIDAD LATINA DE PANAMÁ</a></span>
+      <p class="info">La empatía y la comprensión ante la adversidad nos permite crecer en nuestro yo interno. Tracemos nuestras metas y un sendero para alcanzarlas con esfuerzo, perseverancia y entrega. Aprendamos continuamente y tengamos autoconfianza en lo que hacemos para vencer los obstáculos que se nos presenten.</p>
     </li>
     <li>
-      <img class="image" src="https://picsum.photos/100/100" alt="University 3">
-      <div class="info">
-        <span class="university"><a href="https://www.example-university3.com">Example University 3</a></span>
-        <p>Nestled in a picturesque setting, Example University 3 is known for its close-knit community and personalized learning experience.</p>
-      </div>
+      <span class="university"><a href="#">UNIVERSIDAD SANTA MARIA LA ANTIGUA (USMA)</a></span>
+      <p class="info">MISIÓN: La Universidad tiene como misión la promoción de una cultura integral capaz de formar personas que se distingan por sus profundos conocimientos científicos y humanísticos</p>
+      <p class="info">VISIÓN: Ser una auténtica comunidad de personas, promotora de una sólida y responsable formación académica, fiel a las exigencias de la ética cristiana, solidaria mediante el servicio a la sociedad y difusora de los valores de la identidad nacional.</p>
+      <p class="info">Valores: Transparencia, Compromiso Social, Excelencia, Integridad, Respeto, Equidad, Honestidad</p>
     </li>
-    <!-- Add more universities as needed -->
-  </ul>
-  <footer>
-    <p class="creator">Website created by John Doe</p>
-  </footer>
+    <li>
+      <span class="university"><a href="#">UNIVERSIDAD DEL ISTMO</a></span>
+      <p class="info">La U del istmo es una universidad 100% acreditada. En el 2021 y por cuarto año consecutivo, ha sido elegida como la única universidad en Panamá ubicada en el ranking Iberoamericano FSO; y también ha sido reconocida como la mejor universidad privada de Panamá según el ranking WebOmetrics 2020.</p>
+    </li>
+    <li>
+      <span class="university"><a href="#">UNIVERSIDAD INTERAMERICANA DE PANAMÁ (UIP)</a></span>
+      <p class="info">Nuestra institución, la Universidad Interamericana de Panamá fue aprobada en 1992 por Decreto Presidencial e inició operaciones en 1994, con 90 alumnos matriculados. Nuestra evolución como institución va en paralelo al desarrollo del país, con el cual tenemos un firme compromiso.</p>
+    </li>
+    <li>
+      <span class="university"><a href="#">Universidad Especializada de las Américas (UDELAS)</a></span>
+      <p class="info">Es una institución panameña de educación superior, de origen Estatal, fundada en 1997, con el objetivo de ofrecer carreras innovadoras y, a la vez, formar profesionales que ayuden a solventar las necesidades reales de los sectores productivos del país.</p>
+    </li>
+    <li>
+      <span class="university"><a href="#">IFARHU</a></span>
+      <p class="info">MISIÓN: Institución dedicada al desarrollo de la formación y aprovechamiento del capital humano, mediante programas y proyectos destinados a la comunidad en general, otorgando becas y créditos educativos para contribuir al mejoramiento de la calidad de vida de la población nacional.</p>
+      <p class="info">VISIÓN: Ser instituto con merecido liderazgo y reconocimiento en el ámbito nacional e internacional, por la cobertura de sus programas, el compromiso con la comunidad y la diversidad y calidad en sus servicios.</p>
+    </li>
+    <li>
+      <span class="university"><a href="#">UNIVERSIDAD DE PANAMÁ</a></span>
+      <p class="info
+
+  <p class="info">MISIÓN: Formar profesionales y ciudadanos cimentados en los más altos estándares de calidad, íntegros, humanistas, innovadores, resilientes, con compromiso social, conciencia crítica e identidad nacional.</p>
+  <p class="info">VISIÓN: Reafirmar la consolidación de la universidad como la principal institución de educación superior del país, líder en la formación de profesionales de calidad, asentada en un alto perfil docente, investigación pertinente, vinculación con la sociedad, innovación, internacionalización, producción científica, tecnológica y humanística.</p>
+  <p class="info">VALORES: Compromiso, Equidad, Excelencia, Identidad nacional, Integridad, Justicia, Laboriosidad, Lealtad, Respeto, Responsabilidad, Tolerancia, Transparencia.</p>
+</li>
+
+<li>
+  <span class="university"><a href="#">Becas Walton Panama</a></span>
+  <p class="info">El fundador de Walmart, Sam Walton, y su esposa, Helen, lanzaron el programa con un compromiso sin precedentes de financiar 60 becas estudiantiles a cada una de las tres respetadas universidades religiosas de Arkansas al año. Desde el principio, el objetivo del programa ha sido promover la democracia y la libre empresa en América Latina a través de la educación. Cada año, se llevan a cabo rigurosos procesos de detección en El Salvador, Honduras, Nicaragua, Panamá, Costa Rica, Guatemala, Belice y México.</p>
+</li>
+
+<li>
+  <span class="university"><a href="#">Universidad Metropolitana de Educación, Ciencia y Tecnología (UMECIT)</a></span>
+  <p class="info">En UMECIT tenemos 6 facultades con más de 100 carreras universitarias en Panamá, Colombia, Ecuador, Chile y Estados Unidos para que puedas ser el profesional que siempre has querido ser.</p>
+</li>
+<li>
+  <span class="university"><a href="#">Beca Rhodes Trust – Oxford University</a></span>
+  <p class="info">Rhodes Trust convoca la Beca Global Rhodes-Universidad de Oxford, es el programa de becas internacionales más antiguo del mundo, y es también uno de los más prestigiosos. El programa ofrece becas que financiarán los estudios de posgrado en la Universidad de Oxford en el Reino Unido, una de las más importantes universidades del mundo.</p>
+</li>
+
+<li>
+  <span class="university"><a href="#">Becas de la École Normale Supérieure (ENS)</a></span>
+  <p class="info">Su programa de becas se abre anualmente para aquellos estudiantes internacionales que deseen estudiar en Francia en áreas como las Ciencias, las Artes o las Humanidades.</p>
+</li>
+
+<li>
+  <span class="university"><a href="#">Becas Internacionales – École Polytechnique</a></span>
+  <p class="info">Este tipo de becas para estudiar en Francia buscan incrementar los niveles de conocimiento multidisciplinario dentro de la comunidad estudiantil internacional.</p>
+</li>
+
+<li>
+  <span class="university"><a href="#">Becas HEC Paris</a></span>
+  <p class="info">Estas becas para estudiar en Francia le resultan muy atractivas a los estudiantes internacionales hoy en día puesto que se dividen en varias categorías.</p>
+</li>
+
+<li>
+  <span class="university"><a href="#">Programa de Becas Internacionales AACE</a></span>
+  <p class="info">Las becas para estudiar en Estados Unidos que otorga la AACE International premian la excelencia académica.</p>
+</li>
+
+<li>
+  <span class="university"><a href="#">Becas PEO International Peace</a></span>
+  <p class="info">Estas becas para estudiar en Estados Unidos son otorgadas por la organización PEO cuya sede está ubicada en Iowa, USA.</p>
+</li>
+
+<li>
+  <span class="university"><a href="#">Universidad de Costa Rica (UCR)</a></span>
+  <p class="info">La UCR es una de las universidades más grandes y prestigiosas de Centroamérica, conocida por su excelencia en investigación y educación.</p>
+</li>
+
+<li>
+  <span class="university"><a href="#">Universidad de San Carlos de Guatemala (USAC)</a></span>
+  <p class="info">La USAC es la universidad más grande de Guatemala y una de las más antiguas de América Central.</p>
+</li>
+
+<li>
+  <span class="university"><a href="#">Universidad Nacional Autónoma de Honduras (UNAH)</a></span>
+  <p class="info">La UNAH es la universidad más grande y reconocida de Honduras, con una variedad de programas académicos y una destacada investigación.</p>
+</li>
+
+<li>
+  <span class="university"><a href="#">Universidad de El Salvador (UES)</a></span>
+  <p class="info">La UES es la universidad más grande de El Salvador y ofrece una amplia gama de programas académicos.</p>
+</li>
+
+<li>
+  <span class="university"><a href="#">Universidad Nacional de Costa Rica (UNA)</a></span>
+  <p class="info">La UNA es conocida por su enfoque en la investigación y la educación ambiental.</p>
+</li>
+
+<li>
+  <span class="university"><a href="#">Universidad de San José (USJ)</a></span>
+  <p class="info">La USJ es una de las universidades privadas más prestigiosas de Nicaragua.</p>
+</li>
+
+<li>
+  <span class="university"><a href="#">Universidad del Valle de Guatemala (UVG)</a></span>
+  <p class="info">La UVG es una universidad privada que se enfoca en programas académicos de alta calidad.</p>
+</li>
+
+<li>
+  <span class="university"><a href="#">Yale University – Merit-Based Scholarships</a></span>
+  <p class="info">Yale University Merit-based Scholarships para estudiar en Estados Unidos, basada en la necesidad para estudiantes universitarios, son un obsequio que el estudiante no tiene que devolver.</p>
+</li>
+
+<li>
+  <span class="university"><a href="#">Boston University – Trustee Scholarships</a></span>
+  <p class="info">Boston University ofrece las Trustee Scholarships para estudiantes internacionales.</p>
+</li>
+
+<li>
+  <span class="university"><a href="#">American University – Emerging Global Leader Scholarship</a></span>
+  <p class="info">Las Emerging Global Leader Scholarship de American University promueven el acceso y las oportunidades educativas al mismo tiempo que mejora la diversidad internacional.</p>
+</li>
+
+<li>
+  <span class="university"><a href="#">Stanford University – Knight Hennessy Scholars Program</a></span>
+  <p class="info">Knight-Hennessy Scholars cultiva y apoya una comunidad multicultural de estudiantes que desean estudiar en Estados Unidos.</p>
+</li>
+
+<li>
+  <span class="university"><a href="#">Simmons University – Kotzen Scholarship</a></span>
+  <p class="info">El Programa de Becas Gilbert y Marcia Kotzen es un premio al mérito competitivo que reconoce a los mejores y más brillantes estudiantes interesados en una educación transformadora en la Universidad de Simmons.</p>
+</li>
+
+<li>
+  <span class="university"><a href="#">University of Miami – Stamps Scholarship</a></span>
+  <p class="info">La Universidad de Miami ofrece becas totalmente financiadas para estudiantes internacionales que deseen estudiar en Estados Unidos.</p>
+</li>
+
+<li>
+  <span class="university"><a href="#">Tulane University – Global Scholarships</a></span>
+  <p class="info">Tulane University ofrece una variedad de generosas oportunidades de becas basadas en la necesidad y el mérito para estudiantes internacionales que desean estudiar en Estados Unidos.</p>
+</li>
+
+</ul>
+<footer>
+  <p class="creator">Website created by John Doe</p>
+</footer>
 </body>
 </html>
 
